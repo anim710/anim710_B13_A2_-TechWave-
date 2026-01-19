@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  cursor: pointer; }
+
+ul,
+ol {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0; }
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: Medium;
+}
+
+/* shared styles */
+
+
+
+/* header styles */
+/* banner */
+.banner{
+    background-image: url('../assets/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    /* padding: 70px 120px 134px 120px; */
+    width: 100%;
+    height: 750px;
+    
+}
+
+/* navbar realted style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(26, 11, 46, 1);
+  border-bottom: 0.5px solid gray;
+}
+
+.nav-logo h1 {
+  font-size: 13.5rem 2rem;
+    color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-btn button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 10000px;
+    padding: 0.5rem 1rem;
+    border: none;
+    width: 135px;
+    height: 44px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
