@@ -55,6 +55,36 @@ p {
     
 }
 
+.btn-primary{
+padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 9999px;
+    background: #00ff85;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    /* transition: transform 0.3s; */
+
+}
+
+
+.subscribe-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 9999px; /* Pill shape */
+    background: linear-gradient(to right, #ff6b6b, #ffb74d);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.secondary {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
 /* navbar realted style */
 .navbar {
   display: flex;
@@ -94,6 +124,127 @@ p {
 }
 
 
+
+/* about-tech */
+.about-section {
+   
+    padding: 80px 20px;
+    text-align: center;
+    background: #2a0a4a;
+
+}
+
+.about-section h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: 0 auto 64px auto;
+}
+
+.about-content p {
+    color: #D1D1D1;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.extra-text {
+    color: white;
+    font-weight: 600;
+}
+
+.about-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    padding-top: 48px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.number {
+    color: #00F594;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.text {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 12px;
+}
+
+
+
+/* host section styles */
+.host {
+    padding: 4rem 2rem;
+    background: #2a0a4a;
+    text-align: center;
+    color: white;
+}
+
+.host h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.host-content {
+    display: flex;
+    align-items: center;
+    background: #3a1a5a;
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.host-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.host-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.host-content p {
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+
 /* footer styles */
 .footer-img {
     background-image: url('../assets/footer-bg.png');
@@ -102,6 +253,19 @@ p {
     background-position: center;
 }
 
+
+/* why-techwave */
+.why-choose-section {
+    background-color: #230E3D;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.why-choose-section h2 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 48px;
+}
 
 .grids {
     display: grid;
@@ -133,4 +297,91 @@ p {
     color: #d1d1d1;
     font-size: 15px;
     line-height: 1.5;
+}
+
+.card-audio {
+    grid-row: span 2;
+}
+
+.card-mobile {
+    grid-column: span 2;
+}
+
+.card-community {
+    grid-column: span 2;
+}
+
+.card-interviews {
+    grid-column: span 2;
+}
+
+.card-resources {
+    grid-column: span 1;
+}
+
+
+/* features */
+.features-section {
+    background-color: #1A0B2E;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features-section h2 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.episode-box1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.episode-card {
+    background-color: #24143a;
+    border-radius: 20px;
+    padding: 20px;
+    flex: 1;
+    text-align: left;
+}
+
+.iframe-section {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 15px;
+}
+
+.iframe-section iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.episode-card h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.episode-card p {
+    color: #d1d1d1;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #00FF88;
+    font-weight: bold;
+}
+
+.time img {
+    width: 16px;
 }
