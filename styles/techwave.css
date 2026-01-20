@@ -50,8 +50,8 @@ p {
     background-position: center;
     justify-content: center;
     text-align: center;
-    /* padding: 70px 120px 134px 120px; */
-    width: 100%;
+    padding: 70px 120px 134px 120px;
+    
     height: 750px;
     color: white;
     
@@ -61,7 +61,7 @@ p {
     position: relative;
     width: 250px;
     height: 250px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,7 +159,7 @@ header>h1 {
   color: white;
 }
 
-.nav-btn button {
+/* .nav-btn button {
     background-color: #007bff;
     color: white;
     border-radius: 10000px;
@@ -169,8 +169,26 @@ header>h1 {
     height: 44px;
     font-size: 1rem;
     font-weight: 600;
+} */
+
+.subscribe-btn{
+    width: 135px;
+    height: 40px;
+    color: white;
+    position: relative;
+    border-radius: 10000px;
+background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+}
+.subscribe-btn button{
+    margin-top: 10px;
+    margin-left: 20px;
+    /* gap: 10px; */
+    /* padding: 12px 16px; */
 }
 
+.hamburger-btn{
+    display: none;
+}
 
 
 /* about-tech */
@@ -288,17 +306,32 @@ header>h1 {
 
     
 }
-.social-icons img {
+.host_icon img {
     width: 20px;
     height: 20px;
+
 }
 
-.social-icons a {
+/* .social-icons a {
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
-}
+    gap : 10px;
+} */
 
+.host_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    /* background-color: #230E3D; */
+    padding: 5px;
+    background-color: transparent;
+}
 
 /* footer styles */
 .footer-container {
@@ -478,4 +511,95 @@ header>h1 {
 
 .time img {
     width: 16px;
+}
+
+
+
+
+
+
+
+
+
+/* Mobile Responsive */
+@media screen and (max-width:  576px) {
+    nav .navbar {
+        display: flex;
+        padding: 10px;
+    }
+    .menu{
+        display: none;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    .subscribe-btn {
+       display: none;
+    }
+    .hamburger-btn{
+        display: inline;
+    }
+
+    .about-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .detail-item {
+        text-align: center;
+    }
+    .grids {
+        grid-template-columns: 1fr;
+    }
+    .episode-box1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .episode-card {
+        width: 100%;
+        max-width: 400px;
+    }
+    .host-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .host-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .profile h2 {
+        font-size: 32px;
+    }
+    .footer-links {
+        flex-direction: row;
+        gap: 20px 40px;
+        max-width: 300px;
+    }
+
+    .links {
+        flex: 0 0 calc(50% - 20px);
+    }
+
+    .logo-text {
+        font-size: 32px;
+    }
+    .btn {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header-container {
+        width: 180px;
+        height: 180px;
+    }
 }
